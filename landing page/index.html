@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Landing page </title>
+        <link rel ="stylesheet" href ="style.css">
+        
+      </head>
+    <body>
+      <section >
+        
+        <header>
+      <img src="logo.png" class="logo" >
+      <ul>
+        <li ><a href ="#">Home</a></li>
+        <li><a href ="#">What's New</a></li>
+        <li><a href ="#">Menu</a></li>
+        <li><a href ="#">Contact</a></li>
+        
+      </ul>
+    </header>
+    <div class ="content">
+      <div class="textbox"></div>
+      <h2>It's not just a coffee<br>It's<span>Starbucks</span></h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, deserunt.<br> Maxime fuga modi quae quo odio aspernatur qui? Aliquam eum quibusdam tempore, <br>veniam voluptates soluta cum reprehenderit non tempora blanditiis.</p>
+      <a href ="#">Learn More</a>
+      </div>
+      <div class="imgbox">
+        <img src="img1.png" class="starbucks">
+        </div>
+   
+    <ul class="thumb">
+      <li><img src="thumb2.png" alt="thumb" onClick=" imgSlider('img1.png')"></li>
+      <li><img src="thumb1.png" alt="thumb" onClick=" imgSlider('img2.png')"></li>
+      <li><img src="thumb3.png" alt="thumb" onClick=" imgSlider('img3.png')"></li>
+    </ul>
+
+    
+    </section>
+    <script type ="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+      }
+    </script>
+     </body>
+        </html>
