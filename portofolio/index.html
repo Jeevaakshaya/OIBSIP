@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            protofolio 
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div class="hero">
+        <nav>
+            <img src="RM.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+       
+       <div class="name">
+        <h1>I'm RM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellat quas, sit nisi temporibus minima similique perspiciatis necessitatibus <br>velit ipsam non officia hic ut officiis esse vel, laborum, explicabo vitae recusandae?</p>
+    <a href="#">DOWNLOAD CV</a>
+    
+    
+    </div>
+    <div class="images">
+        <img src="purple 1.png" class="shape">
+        <img src="RM.png.png" class="boy">
+        
+    </div> 
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="RM.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam culpa minima minus ipsa repudiandae harum iure deserunt? Quam deleniti ea neque <br>accusamus omnis, doloribus sed, adipisci voluptatibus debitis saepe perspiciatis.</p>
+            
+            
+            <div class="title">
+                <h3 class="tab-links active-link" onClick="opentab('skills')">skills</h3>
+                <h3 class="tab-links " onClick="opentab('experience')">experience</h3>
+                <h3 class="tab-links " onClick="opentab('education')">education</h3>
+                </div>
+            <div class="tab-contents active-tab"  id="skills">
+                <ul>
+                    <li><span>skill 1</span><br> amet consectetur adipisicing </li>
+                    <li><span>skill 2</span><br> amet consectetur adipisicing </li>
+                    <li><span>skill 3</span><br> amet consectetur adipisicing </li>
+                </ul>
+            </div>
+            <div class="tab-contents " id="experience">
+                <ul>
+                    <li><span>year</span><br> amet consectetur adipisicing </li>
+                    <li><span>year</span><br> amet consectetur adipisicing </li>
+                    <li><span>year</span><br> amet consectetur adipisicing </li>
+                </ul>
+            </div>
+            <div class="tab-contents " id="education">
+                <ul>
+                    <li><span>college</span><br> amet consectetur adipisicing </li>
+                    <li><span>school</span><br> amet consectetur adipisicing </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      
+    }
+
+</script>
+    </body>
+</html>
